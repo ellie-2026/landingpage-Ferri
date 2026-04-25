@@ -1,0 +1,50 @@
+:root{
+    --hex-brand-100: #FEDDCB;
+    --hex-brand-200: #FDB298;
+    --hex-brand-300: #FB7E64;
+    --hex-brand-400: #F74E3D;
+    --hex-brand-500: #F30000;
+    --hex-brand-600: #D00012;
+    --hex-brand-700: #AE001E;
+    --hex-brand-800: #8C0024;
+    --hex-brand-900: #740028;
+
+    --hex-neutral-50:#FAFAFA;
+    --hex-neutral-100: #EEEEEE;
+    --hex-neutral-200: #D5D5D5;
+    --hex-neutral-300: #B9B9B9;
+    --hex-neutral-400: #969696;
+    --hex-neutral-500: #777777;
+    --hex-neutral-600: #575757;
+    --hex-neutral-700: #3E3E3E;
+    --hex-neutral-800: #1B1B1B;
+    --hex-neutral-900: #070707;
+
+    @media screen and (prefers-color-scheme: dark) {
+        --color-canvas: var(--hex-neutral-900);
+        --color-text: var(--hex-neutral-800);
+
+        --color-ink: var(--hex-neutral-50);
+        --color-ink-secondary: var(--hex-neutral-300);
+        --color-ink-inverted: var(--hex-neutral-900);
+
+        --color-link: var(--hex-brand-50);
+
+        --color-filter-hover: var(--hex-neutral-500);
+        --color-filter-selected: var(--hex-neutral-600);
+    }
+
+        @media screen and (prefers-color-scheme: light) {
+        --color-canvas: var(--hex-neutral-50);
+        --color-text: var(--hex-neutral-100);
+
+        --color-ink: var(--hex-neutral-900);
+        --color-ink-secondary: var(--hex-neutral-600);
+        --color-ink-inverted: var(--hex-neutral-50);
+
+        --color-link: var(--hex-brand-900);
+
+        --color-filter-hover: var(--hex-neutral-500);
+        --color-filter-selected: var(--hex-neutral-600);
+    }
+}

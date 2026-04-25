@@ -1,2 +1,4 @@
 @import "tokens/typography.css";
 @import "tokens/colors.css";
+@import "tokens/sizes.css";
+@import "tokens/easings.css";
