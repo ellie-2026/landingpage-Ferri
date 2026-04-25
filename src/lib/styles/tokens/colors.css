@@ -30,8 +30,8 @@
 
         --color-link: var(--hex-brand-50);
 
-        --color-filter-hover: var(--hex-neutral-500);
-        --color-filter-selected: var(--hex-neutral-600);
+        --color-filter--hover: var(--hex-neutral-500);
+        --color-filter--selected: var(--hex-neutral-600);
     }
 
         @media screen and (prefers-color-scheme: light) {
@@ -44,7 +44,7 @@
 
         --color-link: var(--hex-brand-900);
 
-        --color-filter-hover: var(--hex-neutral-500);
+        --color-filter--hover: var(--hex-neutral-500);
         --color-filter-selected: var(--hex-neutral-600);
     }
 }

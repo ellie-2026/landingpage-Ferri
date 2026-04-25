@@ -4,22 +4,12 @@ export default class Project {
             Object.entries(import.meta.glob("./projects/**/*.md")).map(
                 async ([path, resolver]) => {
                     const { metadata: data } = await resolver();
-                    const slug = path.split("/").pop().slice(0, -3);
+                    const slug = path.split("/").pop()?.slice(0, -3) ?? "";
                     return { slug, data };
                 }
             )
         );
-        return projects.sort((a, b) => {
-            const yearA = a.data.year;
-            const yearB = b.data.year;
-            if (yearA > yearB) return -1;
-            if (yearA < yearB) return 1;
-            const titleA = a.data.title.toUpperCase();
-            const titleB = b.data.title.toUpperCase();
-            if (titleA < titleB) return -1;
-            if (titleA > titleB) return 1;
-            return 0;
-        });
+        return projects;
     }
 
     static async byYear() {
@@ -34,6 +24,6 @@ export default class Project {
             }
             group.projects.push(project);
         }
-        return result;
+        return result.sort((a, b) => b.number - a.number);
     }
-} 
+}

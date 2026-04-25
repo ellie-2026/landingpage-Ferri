@@ -49,4 +49,5 @@
         align-items: center;
         gap: var(--size-5);
     }
+    
 </style>
