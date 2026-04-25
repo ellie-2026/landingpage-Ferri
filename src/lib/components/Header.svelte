@@ -3,7 +3,7 @@
 </script>
 
 <header class="safe-area">
-    <Link title="EF-RAW" ref="/" />
+    <Link title="EF - RAW" ref="/" />
 
     <nav>
         <Link title="ABOUT" ref="/about" />
