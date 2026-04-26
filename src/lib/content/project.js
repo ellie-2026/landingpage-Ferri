@@ -1,3 +1,5 @@
+import { description } from "$lib/content/description.js";
+
 export default class Project {
     static async all() {
         const projects = await Promise.all(
@@ -17,9 +19,16 @@ export default class Project {
         const result = [];
         for (const project of projects) {
             const year = project.data.year;
-            let group = result.find(g => g.number === year);
+            let group = result.find(g => g.number == year);
             if (!group) {
-                group = { number: year, projects: [] };
+                const descriptionData = description[year];
+                group = { 
+                     number: year, 
+                     label: descriptionData.label,
+                     coordinates: descriptionData.coordinates,
+                     description: descriptionData.description,
+                     projects: [] 
+                    };
                 result.push(group);
             }
             group.projects.push(project);

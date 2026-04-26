@@ -28,10 +28,11 @@
         --color-ink-secondary: var(--hex-neutral-300);
         --color-ink-inverted: var(--hex-neutral-900);
 
-        --color-link: var(--hex-brand-50);
+        --color-link: var(--hex-brand-500);
 
-        --color-filter--hover: var(--hex-neutral-500);
-        --color-filter--selected: var(--hex-neutral-600);
+        --color-image-hover: var(--hex-neutral-500);
+        --color-filter--hover: var(--hex-neutral-800);
+        --color-filter--selected: var(--hex-brand-500);
     }
 
         @media screen and (prefers-color-scheme: light) {
@@ -42,9 +43,10 @@
         --color-ink-secondary: var(--hex-neutral-600);
         --color-ink-inverted: var(--hex-neutral-50);
 
-        --color-link: var(--hex-brand-900);
+        --color-link: var(--hex-brand-500);
 
-        --color-filter--hover: var(--hex-neutral-500);
+        --color-image-hover: var(--hex-neutral-500);
+        --color-filter--hover: var(--hex-neutral-200);
         --color-filter--selected: var(--hex-neutral-600);
     }
 }

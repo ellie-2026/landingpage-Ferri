@@ -53,3 +53,19 @@ img, video {
     display: block;
     max-inline-size: 100%;
 }
+
+.safe-area {
+    padding-inline: var(--size-10);
+}
+
+@media (max-width: 744px) {
+    .safe-area {
+        padding-inline: var(--size-7);
+    }
+}
+
+@media (max-width: 402px) {
+    .safe-area {
+        padding-inline: var(--size-5);
+    }
+}

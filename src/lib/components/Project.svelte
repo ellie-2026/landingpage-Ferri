@@ -24,7 +24,7 @@
         <header>
             <hgroup>
                 <h3>{project?.title}</h3>
-                <span>/ {project?.year}</span>
+                <span>| {project?.year}</span>
             </hgroup>
 
             {#if project?.link}
@@ -39,6 +39,8 @@
 <style>
     
     article {
+        font-size: var(--size-4-2);
+        font-weight: 600;
         display: flex;
         flex-direction: column;
         gap: var(--size-2);
@@ -56,7 +58,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background-color: var(--color-link);
+            background-color: var(--color-image-hover);
             mix-blend-mode: color;
 
             transition: opacity 0.75s var(--ease-out-quart);
@@ -74,7 +76,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: var(--size-4);
+        gap: var(--size-5);
 
         overflow: clip;
     }
@@ -86,6 +88,7 @@
 
         span {
             color: var(--color-ink-secondary);
+            font-weight: 400;
         }
     }
 
