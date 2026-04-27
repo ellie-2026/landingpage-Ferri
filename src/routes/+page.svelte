@@ -4,15 +4,15 @@
 
   const { data } = $props();
 
-  let currentYear = $state(data.years[0].number);
+  let currentPlace = $state(data.places[0].number);
 
-  let selectedYear = $derived.by(() =>
-    data.years.find((year) => year.number == currentYear)
+  let selectedPlace = $derived.by(() =>
+    data.places.find((place) => place.number == currentPlace)
   );
 
   let projects = $derived.by(() => {
-    return data.years.find((year) => {
-      return year.number == currentYear;
+    return data.places.find((place) => {
+      return place.number == currentPlace;
     }).projects;
   });
 </script>
@@ -30,20 +30,20 @@
 </section>
 
 <nav class="safe-area filters">
-  {#each data.years as year}
-    <Filter bind:group={currentYear} value={year.number} />
+  {#each data.places as place}
+    <Filter bind:group={currentPlace} value={place.number} />
   {/each}
 </nav>
 
 <section class="safe-area intro">
-  <h2 class="intro__label">{selectedYear.label}</h2>
+  <h2 class="intro__label">{selectedPlace.label}</h2>
 
   <p class="intro__text">
-    {selectedYear.description}
+    {selectedPlace.description}
   </p>
 
   <span class="intro__coords">
-    {selectedYear.coordinates}
+    {selectedPlace.coordinates}
   </span>
 
 </section>

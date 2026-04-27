@@ -14,16 +14,16 @@ export default class Project {
         return projects;
     }
 
-    static async byYear() {
+    static async byPlace() {
         const projects = await this.all();
         const result = [];
         for (const project of projects) {
-            const year = project.data.year;
-            let group = result.find(g => g.number == year);
+            const place = project.data.place;
+            let group = result.find(g => g.number == place);
             if (!group) {
-                const descriptionData = description[year];
+                const descriptionData = description[place];
                 group = { 
-                     number: year, 
+                     number:place, 
                      label: descriptionData.label,
                      coordinates: descriptionData.coordinates,
                      description: descriptionData.description,

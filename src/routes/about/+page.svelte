@@ -1,21 +1,21 @@
 <script>
   const images = [
-    "/images/about/01.jpg",
-    "/images/about/02.jpg",
-    "/images/about/03.jpg",
-    "/images/about/04.jpg",
-    "/images/about/05.jpg",
-    "/images/about/06.jpg",
-    "/images/about/07.jpg",
-    "/images/about/08.jpg",
-    "/images/about/09.jpg",
-    "/images/about/10.jpg",
-    "/images/about/11.jpg",
-    "/images/about/12.jpg",
-    "/images/about/13.jpg",
-    "/images/about/14.jpg",
-    "/images/about/15.jpg",
-    "/images/about/16.jpg",
+    "/images/about/01.jpeg",
+    "/images/about/02.jpeg",
+    "/images/about/03.jpeg",
+    "/images/about/04.jpeg",
+    "/images/about/05.jpeg",
+    "/images/about/06.jpeg",
+    "/images/about/07.jpeg",
+    "/images/about/08.jpeg",
+    "/images/about/09.jpeg",
+    "/images/about/10.jpeg",
+    "/images/about/11.jpeg",
+    "/images/about/12.jpeg",
+    "/images/about/13.jpeg",
+    "/images/about/14.jpeg",
+    "/images/about/15.jpeg",
+    "/images/about/16.jpeg",
   ];
 </script>
 
@@ -42,7 +42,7 @@
     <div class="about__bottom">
       <blockquote class="about__quote">
         <p>"Photographier, c'est mettre sur la même ligne de mire la tête, l'œil et le cœur."</p>
-        <cite>— Henri Cartier-Bresson</cite>
+        <cite>Henri Cartier-Bresson</cite>
       </blockquote>
 
       <div class="about__gallery">
@@ -152,9 +152,8 @@
   }
 
   .about__quote cite {
-    font-size: var(--size-4-2);
+    font-size: var(--size-4);
     font-weight: 500;
-    font-style: italic;
     text-transform: none;
     letter-spacing: 0;
     color: var(--color-ink-secondary);

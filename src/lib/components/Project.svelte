@@ -24,7 +24,7 @@
         <header>
             <hgroup>
                 <h3>{project?.title}</h3>
-                <span>| {project?.year}</span>
+                <span>| {project?.place}</span>
             </hgroup>
 
             {#if project?.link}
@@ -99,7 +99,7 @@
     @media (max-width: 480px) {
 
   article {
-    font-size: var(--size-3-2);
+    font-size: var(--size-3);
   }
 }
 </style>
