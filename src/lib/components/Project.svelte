@@ -97,7 +97,6 @@
     }
 
     @media (max-width: 480px) {
-
   article {
     font-size: var(--size-3);
   }

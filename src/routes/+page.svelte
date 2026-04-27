@@ -17,7 +17,6 @@
   });
 </script>
 
-
 <section class="safe-area hero">
   <h1 class="hero-title">UNSCRIPTED</h1>
   <p class="hero-quote">
@@ -45,7 +44,6 @@
   <span class="intro__coords">
     {selectedPlace.coordinates}
   </span>
-
 </section>
 
 <section class="safe-area projects">

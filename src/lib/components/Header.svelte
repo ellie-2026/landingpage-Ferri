@@ -31,7 +31,7 @@
         align-items: center;
     }
 
-    @media (max-width: 767px) {
+@media (max-width: 767px) {
   header {
     padding-inline: var(--size-7);
     font-size: var(--size-5-2);
