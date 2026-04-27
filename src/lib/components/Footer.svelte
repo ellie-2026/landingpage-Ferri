@@ -42,30 +42,28 @@
         gap: var(--size-2);
         text-align: center;
         color: var(--color-ink-secondary);
-        font-size: var(--size-4-2);
+        font-size: var(--size-5);
+        font-weight: 500;
         line-height: var(--size-6);
     } 
 
-    @media (max-width: 402px) {
+@media (max-width: 768px) {
+  footer {
+    padding-block: var(--size-5);
+    padding-inline: var(--size-5-2);
+  }
 
-        .cta {
-            font-size: var(--size-4-2);
-        }
+  .cta {
+    font-size: var(--size-4-2);
+  }
 
-        .meta {
-            font-size: var(--size-4);
-            line-height: 1.5;
-        }
+  .meta {
+    font-size: var(--size-4);
+  }
 
-        footer {
-            padding-block: var(--size-5);
-            padding-inline: var(--size-4);
-            gap: var(--size-5);
-        }
-
-        hr {
-            margin: var(--size-5);
-        }
-    }
+  hr {
+    margin: var(--size-6);
+  }
+}
 </style>
  

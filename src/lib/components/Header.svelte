@@ -3,7 +3,7 @@
 </script>
 
 <header class="safe-area">
-    <span class="logo">EF - RAW</span>
+    <Link title="EF - RAW" ref="/" />
 
     <nav>
         <Link title="ABOUT" ref="/about" />
@@ -21,6 +21,8 @@
         gap: var(--size-8);
         justify-content: space-between;
         align-items: center;
+        font-size: var(--size-5-2);
+        font-weight: 600;
     }
 
     nav {
@@ -29,31 +31,25 @@
         align-items: center;
     }
 
- @media (max-width: 600px) {
-
+    @media (max-width: 767px) {
   header {
-    flex-direction: row; /* resta orizzontale */
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--size-4);
-    padding-block: var(--size-5);
-  }
-
-  .logo {
-    font-size: var(--size-4);
-    white-space: nowrap; /* evita che vada a capo */
+    padding-inline: var(--size-7);
+    font-size: var(--size-5-2);
   }
 
   nav {
-    display: flex;
+    gap: var(--size-4);
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding-inline: var(--size-5);
+    font-size: var(--size-4-2);
+  }
+
+  nav {
     gap: var(--size-3);
-    align-items: center;
   }
-
-  nav :global(a) {
-    font-size: var(--size-4);
-    white-space: nowrap; 
-  }
-
 }
 </style>

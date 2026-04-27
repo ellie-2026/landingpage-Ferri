@@ -58,13 +58,13 @@ img, video {
     padding-inline: var(--size-10);
 }
 
-@media (max-width: 744px) {
+@media (max-width: 767px) {
     .safe-area {
         padding-inline: var(--size-7);
     }
 }
 
-@media (max-width: 402px) {
+@media (max-width: 480px) {
     .safe-area {
         padding-inline: var(--size-5);
     }

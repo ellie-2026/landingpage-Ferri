@@ -37,14 +37,13 @@
 {/snippet}
 
 <style>
-    
     article {
         font-size: var(--size-4-2);
         font-weight: 600;
         display: flex;
         flex-direction: column;
         gap: var(--size-2);
-
+        font-family: var(--font-secondary); 
         &:hover .veil { opacity: 1; }
         &:hover .arrow { transform: translateY(0); }
     }
@@ -96,4 +95,11 @@
         transition: transform 0.75s var(--ease-out-quart);
         transform: translateY(100%);
     }
+
+    @media (max-width: 480px) {
+
+  article {
+    font-size: var(--size-3-2);
+  }
+}
 </style>
