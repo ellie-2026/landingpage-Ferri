@@ -47,10 +47,21 @@
         line-height: var(--size-6);
     } 
 
-@media (max-width: 768px) {
+    @media (max-width: 767px) {
   footer {
-    padding-block: var(--size-5);
-    padding-inline: var(--size-5-2);
+    padding-inline: var(--size-7);
+    padding-block: var(--size-1); 
+  }
+
+  hr {
+    margin: var(--size-5);
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding-inline: var(--size-5);
+    padding-block: var(--size-1); 
   }
 
   .cta {
@@ -62,8 +73,9 @@
   }
 
   hr {
-    margin: var(--size-6);
+    margin: var(--size-1);
   }
 }
+
 </style>
  
