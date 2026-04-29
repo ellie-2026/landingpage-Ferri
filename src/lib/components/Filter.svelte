@@ -19,10 +19,12 @@
 
         &:hover {
             background-color: var(--color-filter--hover);
+            color: var(--hex-neutral-50);
         }
 
         &:has(input:checked) {
             background-color: var(--color-filter--selected);
+            color: var(--hex-neutral-50);
         }
     }
 
