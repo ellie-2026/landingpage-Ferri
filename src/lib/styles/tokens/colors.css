@@ -46,7 +46,7 @@
         --color-link: var(--hex-brand-500);
 
         --color-image-hover: var(--hex-neutral-500);
-        --color-filter--hover: var(--hex-neutral-200);
-        --color-filter--selected: var(--hex-neutral-600);
+        --color-filter--hover: var(--hex-neutral-800);
+        --color-filter--selected: var(--hex-brand-500);
     }
 }

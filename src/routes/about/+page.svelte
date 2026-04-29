@@ -186,6 +186,7 @@ const images = [
   text-align: center;
   font-size: var(--size-4-2);
   font-family: var(--font-secondary);
+  color: var(--hex-neutral-50);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   opacity: 0;
